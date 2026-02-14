@@ -89,7 +89,7 @@ button {
 
 .proxy-page {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
 }
 
 .proxy-bar {
@@ -116,9 +116,31 @@ button {
   flex: 1;
 }
 
+.status {
+  margin: 0.65rem;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #dbeafe;
+}
+
+.status[data-tone='loading'] {
+  border: 1px solid rgba(56, 189, 248, 0.45);
+}
+
+.status[data-tone='success'] {
+  border: 1px solid rgba(34, 197, 94, 0.45);
+}
+
+.status[data-tone='error'] {
+  border: 1px solid rgba(248, 113, 113, 0.65);
+  color: #fecaca;
+}
+
 #proxy-frame {
   border: none;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 120px);
   background: #fff;
 }

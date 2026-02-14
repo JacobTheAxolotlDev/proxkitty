@@ -1,15 +1,13 @@
 {
   "name": "proxkitty",
   "version": "1.0.0",
-  "description": "ProxKitty scramjet-style web proxy unblocker",
-  "main": "server.js",
+  "description": "ProxKitty HTML/CSS/JS-only web proxy shell",
   "scripts": {
-    "start": "node server.js",
-    "check": "node --check server.js && node --check public/main.js && node --check public/proxy.js"
+    "check": "node --check public/main.js && node --check public/proxy.js"
   },
   "keywords": [
     "proxy",
-    "scramjet",
+    "html5",
     "unblocker"
   ],
   "license": "MIT"

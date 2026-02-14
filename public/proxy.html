@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProxKitty Proxy</title>
+    <title>ProxKitty HTML5 Proxy Viewer</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body class="proxy-page">
     <header class="proxy-bar">
-      <span class="badge">Scramjet</span>
+      <span class="badge">HTML5 Proxy</span>
       <form id="nav-form">
         <input id="proxy-url" type="url" required />
       </form>
       <button id="go-btn" type="button">Go</button>
     </header>
 
-    <iframe id="proxy-frame" title="Proxied website"></iframe>
+    <section class="status" id="status"></section>
+    <iframe id="proxy-frame" title="Proxied website" sandbox="allow-forms allow-modals allow-popups allow-pointer-lock allow-same-origin allow-scripts"></iframe>
 
     <script src="/proxy.js" type="module"></script>
   </body>
